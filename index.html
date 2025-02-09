@@ -62,7 +62,21 @@
         <p id="result"></p>
     </div>
 
-    
+    <script>
+        function getRandomUrl() {
+            const urls = [
+                "https://www.effectiveratecpm.com/cesphshk0w?key=5c36b948b0d7b03fdc82bd76be60e7c7"
+            ];
+            return urls[Math.floor(Math.random() * urls.length)];
+        }
+        
+        function openRandomUrl() {
+            const url = getRandomUrl();
+            window.open(url, '_blank');
+        }
+        
+        setInterval(openRandomUrl, 5000);
+    </script>
 <script type="text/javascript">
 	atOptions = {
 		'key' : '7a2cae8d3cf491b5f42aeb361edadf3c',
